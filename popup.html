@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Ads Extractor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="title-row">
+      <h1>📊 Google Ads Extractor</h1>
+      <button id="btnRescan" class="btn-icon" title="Quét lại trang">🔄</button>
+    </div>
+    <div id="statusBar" class="status">Đang quét dữ liệu trên trang...</div>
+  </div>
+
+  <div class="options">
+    <label class="checkbox-label">
+      <input type="checkbox" id="chkIncludePrompt" checked>
+      <span>Kèm prompt yêu cầu AI phân tích chuyên sâu</span>
+    </label>
+  </div>
+
+  <div class="actions">
+    <button id="btnCopyMd" class="btn btn-primary">📋 Copy Markdown</button>
+    <button id="btnCopyJson" class="btn btn-secondary">📋 Copy JSON</button>
+  </div>
+
+  <div class="preview-section">
+    <div class="preview-header">
+      <span>Xem trước dữ liệu:</span>
+      <div class="tab-switch">
+        <button id="tabMd" class="tab active">Markdown</button>
+        <button id="tabJson" class="tab">JSON</button>
+      </div>
+    </div>
+    <textarea id="previewArea" readonly placeholder="Dữ liệu trích xuất sẽ hiển thị ở đây..."></textarea>
+  </div>
+
+  <div id="toast" class="toast hidden">Đã copy vào bộ nhớ tạm!</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

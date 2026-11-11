@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Google Ads Extractor for AI",
+  "version": "1.0.0",
+  "description": "Trích xuất dữ liệu bảng Chiến dịch, Nhóm quảng cáo, Từ khóa từ Google Ads sang Markdown / JSON để gửi cho AI phân tích.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Trích xuất Google Ads"
+  }
+}
